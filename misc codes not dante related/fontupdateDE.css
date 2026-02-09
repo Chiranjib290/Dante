@@ -1,0 +1,33 @@
+.link-explorer .link-explorer__intro-heading {
+    font-family: 'PwC ITC Charter',Georgia,Serif;
+}
+.link-explorer .link-explorer__intro-copy {
+    font-size: 1rem;
+    line-height: 1.7;
+}
+@media (min-width: 1200px) {
+.link-explorer .link-explorer__intro-copy {
+    font-size: 1.125rem;
+}
+}
+@media (max-width: 767px) {
+.link-explorer .link-explorer__intro-copy {
+    font-size: 1.2rem;
+}
+}
+
+
+.link-explorer .link-explorer__link-text {
+  font-size: 1rem; 
+  line-height: 1.7;
+}
+@media (min-width: 1200px) {
+  .link-explorer .link-explorer__link-text {
+    font-size: 1.125rem;
+  }
+}
+@media (max-width: 767px) {
+  .link-explorer .link-explorer__link-text {
+    font-size: 1.2rem;
+  }
+}

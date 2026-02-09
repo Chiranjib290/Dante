@@ -1,0 +1,19 @@
+.page-dir--rtl .herov2__desktop--content--wrapper .cta-button-wrap .cta-btn.icon-btn.cheveron-right:after {
+    transform: rotate(0deg);
+}
+
+@media (min-width: 768px)
+  {.page-dir--rtl .herov2__desktop--content--wrapper{
+        padding-left: 30px !important;
+        text-align: left !important;
+        left: 0 !important;
+  }
+}
+
+.page-dir--rtl .herov2__desktop--content--wrapper .cta-btn--text {
+    padding-right: 10px !important;
+    padding-left: 0 !important;
+}
+.page-dir--rtl .herov2__desktop--content--wrapper .cta-button-wrap {
+    direction: ltr !important;
+}

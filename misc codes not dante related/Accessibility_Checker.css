@@ -1,0 +1,204 @@
+#lstTerritory > a {
+    /*line-height: normal !important;
+    line-height: initial !important;
+    line-height: unset !important;
+    */
+    line-height: 25px !important;
+    min-height: 45px;
+    padding: 10px 12px;
+    box-sizing: border-box;
+    margin-bottom: 8px;
+}
+
+/* Target the close button in the about_us submenu */
+#about_us-subnav-4 > button.slimheader-close[aria-label="Menu Close"] {
+  /* 1) Force minimum hit area */
+  min-width: 45px;
+  min-height: 45px;
+
+  /* 2) Remove extra padding so we control size exactly */
+  padding: 0;
+
+  /* 3) Center any icon or text */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  /* 4) Space it away from neighbors */
+  margin: 8px;
+
+  /* 5) Preserve or tweak visual styling */
+  background-color: transparent;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+/* 1) Make footer links inline-blocks, enforce 44×44 minimum */
+.glb-footer__link {
+  display: inline-block;
+  min-width: 45px;
+  min-height: 45px;
+  padding: 8px 12px;          /* extra hit area without changing layout */
+  margin: 4px 8px;            /* space between adjacent links */
+  box-sizing: border-box;     /* include padding in size */
+  text-align: center;
+}
+
+/* 2) Visible focus style for keyboard users */
+.glb-footer__link:focus {
+  outline: none;
+  box-shadow: 0 0 0 3px rgba(0,120,212,0.6);
+}
+
+
+/* 1) Ensure inline-block and a 44×44 minimum hit area */
+.glb-footer__disclaimer-links a {
+  display: inline-block !important;
+  padding: 8px 12px !important;
+  min-width: 45px !important;
+  min-height: 45px !important;
+  margin: 4px 8px !important;
+  box-sizing: border-box !important;
+  text-align: center !important;
+}
+
+/* 2) Strong focus indicator for keyboard users */
+.glb-footer__disclaimer-links a:focus {
+  outline: none !important;
+  box-shadow: 0 0 0 3px rgba(0,120,212,0.6) !important;
+}
+
+
+
+
+/* Reveal level-3 nav (measurement only) */
+
+/* .slimheader-slide-nav,
+.slide-nav-contain,
+.slimnav-level3,
+#financial_services-subnav-2-3 {
+  display: block !important;
+  visibility: visible !important;
+  opacity: 1 !important;
+  height: auto !important;
+  overflow: visible !important;
+  transform: none !important;
+} */
+
+/* Touch-target rules */
+.slimheader-slide-nav .levelThreeLink {
+  display: inline-block !important;
+  padding: 8px 12px !important;
+  min-width: 45px !important;
+  min-height: 45px !important;
+  margin: 4px 8px !important;
+  box-sizing: border-box !important;
+}
+
+
+
+
+/* Make the territory-selector toggle a proper touch target */
+#territory-selector-toggle {
+  display: inline-flex;                /* allow centering of text + icons */
+  align-items: center;
+  justify-content: center;
+
+  /* Touch-target minimums */
+  min-width: 44px;
+  min-height: 44px;
+
+  /* Internal padding to hit size even when text is short */
+  padding: 8px 12px;
+
+  /* Space around to avoid accidental taps on neighbors */
+  margin: 4px;
+
+  box-sizing: border-box;              /* include padding in min-width/height */
+}
+
+/* Optional: give a bit more breathing room between text and icon */
+#territory-selector-toggle span {
+  margin-right: 6px;
+}
+
+
+
+
+#services-subnav-1.show-subnav 
+  .slide-nav-contain nav .levelTwoLink {
+  display: inline-block !important;
+  min-width: 44px      !important;
+  min-height: 44px     !important;
+  padding: 8px 12px    !important;
+  margin: 4px 8px      !important;
+  box-sizing: border-box !important;
+}
+
+#services-subnav-1.show-subnav 
+  .slide-nav-contain nav .levelTwoLink:focus {
+  outline: none;
+  box-shadow: 0 0 0 3px rgba(0,120,212,0.6) !important;
+}
+
+
+
+
+#industries-subnav-2.show-subnav 
+  .slide-nav-contain nav .levelTwoLink {
+  display: inline-block !important;
+  box-sizing: border-box !important;
+  min-width: 44px !important;
+  min-height: 44px !important;
+  padding: 8px 12px !important;
+  margin: 4px 8px !important;
+}
+
+#industries-subnav-2.show-subnav 
+  .slide-nav-contain nav .levelTwoLink:focus {
+  outline: none !important;
+  outline-offset: 2px !important;
+  box-shadow: 0 0 0 3px rgba(0,120,212,0.6) !important;
+}
+
+
+
+nav.nav-primary > a.levelOneLink {
+  display: inline-block !important;
+  box-sizing: border-box !important;
+  min-width: 44px !important;
+  min-height: 44px !important;
+  padding: 10px 20px !important;
+  margin: 5px !important;
+  font-size: 16px !important;
+}
+
+
+
+
+/* Enforce 44×44 touch targets and spacing in the global footer */
+.glb-footer__block > a.glb-footer__link--l1 {
+  display: inline-block !important;
+  box-sizing: border-box !important;
+  min-width: 44px !important;
+  min-height: 44px !important;
+  padding: 12px 16px !important;
+  margin: 8px !important;
+}
+
+
+
+
+
+
+/* Enforce 44×44 touch targets and spacing on nav-search buttons */
+.nav-search > button.levelOneLink,
+.nav-search .searchbox > button#close-search {
+  display: inline-block !important;
+  box-sizing: border-box !important;
+  min-width: 44px !important;
+  min-height: 44px !important;
+  padding: 12px 16px !important;
+  margin: 8px !important;
+}
