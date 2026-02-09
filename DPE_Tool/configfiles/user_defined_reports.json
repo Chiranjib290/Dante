@@ -1,0 +1,314 @@
+{
+    "current": 36,
+    "prefix": "User-Def",
+    "report_list": [
+        "Page Report",
+        "Published Page Report",
+        "Processed Contactus Form Report",
+        "In-Progress Contactus Form Report",
+        "Processed Online Form Report",
+        "In-Progress Online Form Report",
+        "Processed Form Field Order data",
+        "In-Progress Form Field Order data",
+        "DAM Assets Report",
+        "Published DAM Assets Report",
+        "Contact Page Report",
+        "Contact Page Report - Published",
+        "Redirection Details",
+        "Ghost Page Report",
+        "Contact Fragment Report",
+        "Contact Fragment Report - Published",
+        "Contact Fragment Reference",
+        "Tag Report",
+        "Tag Report - Published",
+        "Component Usage Report",
+        "User-Def-22-U-Rep-1",
+        "User-Def-9-new-report",
+        "User-Def-4-validated_report-3",
+        "User-Def-5-new-report-2",
+        "User-Def-6-valid-repo",
+        "User-Def-7-valid-2-rep",
+        "User-Def-8-nemesis-po",
+        "User-Def-9-test-repo-pol",
+        "User-Def-10-user-no-limit-p",
+        "User-Def-11-no-limit-bulk-test",
+        "User-Def-12-query-no-limit-test2",
+        "User-Def-13-deded",
+        "User-Def-14-Report_test_23",
+        "User-Def-15-Global_Ref_data",
+        "User-Def-16-Ghost_Report",
+        "User-Def-17-Find_Reference_Report",
+        "User-Def-18-search_groups",
+        "User-Def-19-External_User_Report",
+        "User-Def-20-All_Form_Data",
+        "User-Def-21-get_form_details",
+        "User-Def-22-SPAM_FORM_DATA",
+        "User-Def-23-contact_fragments",
+        "User-Def-24-bottom_kick_fragment_page",
+        "User-Def-25-finding_section_report",
+        "User-Def-26-published_contact_page_report",
+        "User-Def-27-collectionv2",
+        "User-Def-28-nmnmnnm",
+        "User-Def-29-Content_Fragments_Report",
+        "User-Def-30-Contact_Page_Report_Fragment",
+        "User-Def-31-Tag_Report",
+        "User-Def-32-HTML_Type_Find",
+        "User-Def-33-all_territory_glb_form",
+        "User-Def-34-SK_SK_Form",
+        "User-Def-35-Find_Translation_he_il",
+        "User-Def-36-UK_Cotact_Fragment"
+    ],
+    "query list": {
+        "User-Def-4-validated_report-3": {
+            "id": 4,
+            "name": "validated_report-3",
+            "type": "query builder",
+            "query": "type=cq:Page&path.flat=true&path=/content/pwc/rm/en/shouvik&p.limit=12",
+            "variables": ""
+        },
+        "User-Def-5-new-report-2": {
+            "id": 5,
+            "name": "new-report-2",
+            "type": "bulk editor",
+            "query": "formType:contactUs path:/content/usergenerated/content/pwc/global/forms",
+            "variables": ""
+        },
+        "User-Def-6-valid-repo": {
+            "id": 6,
+            "name": "valid-repo",
+            "type": "query builder",
+            "query": "path.flat=true&path=/content/pwc/rm/en/shouvik",
+            "variables": ""
+        },
+        "User-Def-7-valid-2-rep": {
+            "id": 7,
+            "name": "valid-2-rep",
+            "type": "query builder",
+            "query": "property=valed&p.nodedepth=2&path=/content/pwc/rm&property.value=bn&p.limit=-1&type=cq:Page",
+            "variables": ""
+        },
+        "User-Def-8-nemesis-po": {
+            "id": 8,
+            "name": "nemesis-po",
+            "type": "query builder",
+            "query": "path=/content/pwc/rm/en/shouvik&path.flat=true&type=cq:Page&property=jcr:content/activatedInPublish&property.value=false&p.limit=-1&p.nodedepth=2",
+            "variables": ""
+        },
+        "User-Def-9-test-repo-pol": {
+            "id": 9,
+            "name": "test-repo-pol",
+            "type": "query builder",
+            "query": "group.1_path=/content/pwc/rm/en/ankita&group.2_path=/content/pwc/rm/en/shouvik&group.p.or=true&type=cq:Page",
+            "variables": ""
+        },
+        "User-Def-9-new-report": {
+            "id": 2,
+            "name": "new-report",
+            "type": "query builder",
+            "query": "property.value={varmod2date}&property=cq:modifiedDate&path=/content/pwc/rm/en&type=cq:Page",
+            "variables": "varmod2date"
+        },
+        "User-Def-10-user-no-limit-p": {
+            "id": 10,
+            "name": "user-no-limit-p",
+            "type": "query builder",
+            "query": "path=/content/pwc/rm/en/shouvik&type=cq:Page",
+            "variables": ""
+        },
+        "User-Def-11-no-limit-bulk-test": {
+            "id": 11,
+            "name": "no-limit-bulk-test",
+            "type": "bulk editor",
+            "query": "path:/content/pwc/rm/en/shouvik type:cq:Page",
+            "variables": ""
+        },
+        "User-Def-12-query-no-limit-test2": {
+            "id": 12,
+            "name": "query-no-limit-test2",
+            "type": "query builder",
+            "query": "path=/content/pwc/rm/en&type=cq:Page&p.nodedepth=2",
+            "variables": ""
+        },
+        "User-Def-13-deded": {
+            "id": 13,
+            "name": "deded",
+            "type": "query builder",
+            "query": "path={pathvar}&type={typevar}",
+            "variables": "pathvar,typevar"
+        },
+        "User-Def-14-Report_test_23": {
+            "id": 14,
+            "name": "Report_test_23",
+            "type": "query builder",
+            "query": "path={varpath}&type=cq:Page",
+            "variables": "varpath"
+        },
+        "User-Def-15-Global_Ref_data": {
+            "id": 15,
+            "name": "Global_Ref_data",
+            "type": "query builder",
+            "query": "path=/content/pwc/global/referencedata/territories&property=territoryName&property.operation=exists",
+            "variables": ""
+        },
+        "User-Def-16-Ghost_Report": {
+            "id": 16,
+            "name": "Ghost_Report",
+            "type": "query builder",
+            "query": "path={varpath}&type=cq:PageContent&property=sling:resourceType&property.value=pwc/components/page/ghost",
+            "variables": "varpath"
+        },
+        "User-Def-17-Find_Reference_Report": {
+            "id": 17,
+            "name": "Find_Reference_Report",
+            "type": "query builder",
+            "query": "path={varpath}&property=sling:resourceType&property.value=pwc/components/content/reference",
+            "variables": "varpath"
+        },
+        "User-Def-18-search_groups": {
+            "id": 18,
+            "name": "search_groups",
+            "type": "query builder",
+            "query": "path=/home/groups&type=rep:Group",
+            "variables": ""
+        },
+        "User-Def-19-External_User_Report": {
+            "id": 19,
+            "name": "External_User_Report",
+            "type": "query builder",
+            "query": "path=/home/users/pwc-external-users&type=rep:User&property=profile/email&property.operation=exists",
+            "variables": ""
+        },
+        "User-Def-20-All_Form_Data": {
+            "id": 20,
+            "name": "All_Form_Data",
+            "type": "query builder",
+            "query": "path=/content/usergenerated/archive/content/pwc&1_daterange.property=cq:lastReplicated&1_daterange.lowerBound=2021-05-01&1_daterange.upperBound=2021-05-07&2_property=formType&2_property.value=online",
+            "variables": ""
+        },
+        "User-Def-21-get_form_details": {
+            "id": 21,
+            "name": "get_form_details",
+            "type": "query builder",
+            "query": "path={pathvar}&1_property=sling:resourceType&1_property.value=pwc/components/content/onlineForm/startLongform",
+            "variables": "pathvar"
+        },
+        "User-Def-22-SPAM_FORM_DATA": {
+            "id": 22,
+            "name": "SPAM_FORM_DATA",
+            "type": "query builder",
+            "query": "path={pathvar}&1_property=formType&1_property.value=online&2_property=formtoprocess&2_property=spam",
+            "variables": "pathvar"
+        },
+        "User-Def-22-U-Rep-1": {
+            "id": 1,
+            "name": "U-Rep-1",
+            "query": "path={pathvar}&property=sling:resourceType&property.value=pwc/components/content/onlineForm/startLongform",
+            "type": "query builder",
+            "variables": "pathvar"
+        },
+        "User-Def-23-contact_fragments": {
+            "id": 23,
+            "name": "contact_fragments",
+            "type": "query builder",
+            "query": "path={varpath}&property=jcr:content/data/cq:model&property.value=/conf/pwc/settings/dam/cfm/models/contactprofile",
+            "variables": "varpath"
+        },
+        "User-Def-24-bottom_kick_fragment_page": {
+            "id": 24,
+            "name": "bottom_kick_fragment_page",
+            "type": "query builder",
+            "query": "path={varpath}&1_property=sling:resourceType&1_property.value=pwc/components/modernized/content/ixfsection&2_property=fragmentVariationPath&2_property.operation=exists&nodename=isection-xf-bottom-kick",
+            "variables": "varpath"
+        },
+        "User-Def-25-finding_section_report": {
+            "id": 25,
+            "name": "finding_section_report",
+            "type": "query builder",
+            "query": "path={pathvar}&1_property=sling:resourceType&1_property.value=pwc/components/modernized/content/ixfsection&2_property=fragmentVariationPath&2_property.operation=exists&nodename={nodenamevar}",
+            "variables": "pathvar,nodenamevar"
+        },
+        "User-Def-26-published_contact_page_report": {
+            "id": 26,
+            "name": "published_contact_page_report",
+            "type": "query builder",
+            "query": "path={pathvar}&type=cq:Page&1_property=jcr:content/cq:template&1_property.value=/conf/pwc/settings/wcm/templates/contact-profile-template&2_property=jcr:content/activatedInPublish&2_property.value=true",
+            "variables": "pathvar"
+        },
+        "User-Def-27-collectionv2": {
+            "id": 27,
+            "name": "collectionv2",
+            "type": "query builder",
+            "query": "path={pathvar}&1_property=sling:resourceType&1_property.value=pwc/components/modernized/content/collections-v2",
+            "variables": "pathvar"
+        },
+        "User-Def-28-nmnmnnm": {
+            "id": 28,
+            "name": "nmnmnnm",
+            "type": "query builder",
+            "query": "path={pathvar}&type=cq:Page",
+            "variables": "pathvar"
+        },
+        "User-Def-29-Content_Fragments_Report": {
+            "id": 29,
+            "name": "Content_Fragments_Report",
+            "type": "query builder",
+            "query": "path={pathvar}&type=dam:Asset&1_property=jcr:content/data/cq:model&1_property.value=/conf/pwc/settings/dam/cfm/models/contactprofile",
+            "variables": "pathvar"
+        },
+        "User-Def-30-Contact_Page_Report_Fragment": {
+            "id": 30,
+            "name": "Contact_Page_Report_Fragment",
+            "type": "query builder",
+            "query": "path={pathvar}&1_property=jcr:content/cq:template&1_property.value=/conf/pwc/settings/wcm/templates/contact-profile-template",
+            "variables": "pathvar"
+        },
+        "User-Def-31-Tag_Report": {
+            "id": 31,
+            "name": "Tag_Report",
+            "type": "query builder",
+            "query": "path={pathvar}&property=sling:resourceType&property.value=cq/tagging/components/tag",
+            "variables": "pathvar"
+        },
+        "User-Def-32-HTML_Type_Find": {
+            "id": 32,
+            "name": "HTML_Type_Find",
+            "type": "query builder",
+            "query": "path={pathvar}&property=sling:resourceType&property.value=pwc/components/modernized/content/html",
+            "variables": "pathvar"
+        },
+        "User-Def-33-all_territory_glb_form": {
+            "id": 33,
+            "name": "all_territory_glb_form",
+            "type": "query builder",
+            "query": "path=/content/usergenerated/archive/content/pwc/global/forms/contactUsForm/2023/4&property=formType&property.value=contactUs",
+            "variables": ""
+        },
+        "User-Def-34-SK_SK_Form": {
+            "id": 34,
+            "name": "SK_SK_Form",
+            "type": "query builder",
+            "query": "path=/content/usergenerated/archive/content/pwc/sk/sk/academy/registracia-academy-ludske-zdroje-a-esg&1_property=formType&1_property.value=simple&2_property=pwcSubmissionDatetime&2_property.value=%{varyear}%&2_property.operation=like",
+            "variables": "varyear"
+        },
+        "User-Def-35-Find_Translation_he_il": {
+            "id": 35,
+            "name": "Find_Translation_he_il",
+            "type": "query builder",
+            "query": "path=/apps/pwc/i18n/en-gx&type=nt:folder&1_property=sling:message&1_property.operation=exists&2_property=jcr:mixinTypes&2_property.value=sling:Message",
+            "variables": ""
+        },
+        "User-Def-36-UK_Cotact_Fragment": {
+            "id": 36,
+            "name": "UK_Cotact_Fragment",
+            "type": "query builder",
+            "query": "path=/content/dam/pwc/uk/en/content-fragments/contacts&type=dam:Asset&property=jcr:content/data/cq:model&property.value=/conf/pwc/settings/dam/cfm/models/contactprofile",
+            "variables": ""
+        }
+    },
+    "form_list": [
+     "BottomKick Form",
+     "Online Forms",
+     "Event Form",
+     "All Form Types"
+    ]
+}
