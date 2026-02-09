@@ -1,0 +1,18 @@
+{
+    "selected theme": "clam",
+    "save_user_details": 1,
+    "username": "",
+    "passwd": "",
+    "production_username": "",
+    "production_passwd": "",
+    "stage_username": "",
+    "stage_passwd": "",
+    "qa_username": "",
+    "qa_passwd": "",
+    "ip_username": "",
+    "ip_passwd": "",
+    "ip_ip_qa2_username": "shouvik.d.das@in.pwc.com",
+    "ip_ip_qa2_passwd": "gAAAAABmIg4aBfTxo7lMAR7ldMn2Xp_HwOk2AYFyeHrOV1wphL0VzRWb0kTCUEYogO9unP9_gmBVI1h7Y2WMVliiak0-5OgS0A==",
+    "aem as cloud poc_username": "shouvik.d.das_aemaacs@pwc.com",
+    "aem as cloud poc_passwd": "gAAAAABmNMkV5vyaalipkNbz5xfttkhn8My05lFKWaPF7WMR-j3L4ouNyfks2I3nlEwY8EwoUATEvrWsUkJSUntUiihS0AYYcc_T50NLRGWARNIKHqnc2i8="
+}

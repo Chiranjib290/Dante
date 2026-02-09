@@ -1,0 +1,983 @@
+###CopyPage without children
+/content/pwc/rm/en/shouvik/blank
+
+cmd: copyPage
+_charset_: utf-8
+before: 
+:status: browser
+destName: l2landing
+srcPath: /content/pwc/rm/en/shouvik/l2landing
+destParentPath: /content/pwc/rm/en/shouvik/blank
+shallow: true
+
+https://dpe-stg.pwc.com/bin/wcmcommand
+
+
+/content/pwc/rm/en/shouvik/blank/l2landing
+
+###Copy Page with Children
+
+cmd: copyPage
+_charset_: utf-8
+before: 
+:status: browser
+destName: shouvik-preview-move
+srcPath: /content/pwc/rm/en/shouvik/blank/shouvik-preview-move
+destParentPath: /content/pwc/rm/en/shouvik/blank/l2landing
+shallow: false
+shallowCbx: on
+
+
+
+/content/pwc/rm/en/shouvik/blank/l2landing/shouvik-preview-move/test-page-2
+
+/content/pwc/rm/en/shouvik/blank/l2landing
+
+
+            # self.archive_frame.grid(row=0,column=0,padx=5,pady=5,ipadx=5, ipady=5, sticky="nsew")
+            # self.main_top_frame.grid_columnconfigure(0, weight=1)
+            # self.mxlookup_frame.grid(row=0,column=1,padx=5,pady=5,ipadx=5, ipady=5, sticky="nsew")
+            # self.main_top_frame.grid_columnconfigure(1, weight=1)
+            # self.email_delivery_frame.grid(row=0,column=2,padx=5,pady=5,ipadx=5, ipady=5, sticky="nsew")
+            # self.main_top_frame.grid_columnconfigure(2, weight=1)
+            # self.potential_spam_frame.grid(row=0,column=3,padx=5,pady=5,ipadx=5, ipady=5, sticky="nsew")
+            # self.main_top_frame.grid_columnconfigure(3, weight=1)
+            # self.obscene_language_frame.grid(row=1,column=0,padx=5,pady=5,ipadx=5, ipady=5, sticky="nsew")
+            # self.main_bottom_frame.grid_columnconfigure(0, weight=1)
+            # self.form_readyforproc_frame.grid(row=1,column=1,padx=5,pady=5,ipadx=5, ipady=5, sticky="nsew")
+            # self.main_bottom_frame.grid_columnconfigure(1, weight=1)
+            # self.form_processed_frame.grid(row=1,column=2,padx=5,pady=5,ipadx=5, ipady=5, sticky="nsew")
+            # self.main_bottom_frame.grid_columnconfigure(2, weight=1)
+            # self.form_submitted_frame.grid(row=1,column=3,padx=5,pady=5,ipadx=5, ipady=5, sticky="nsew")
+            # self.main_bottom_frame.grid_columnconfigure(3, weight=1)
+
+
+self.dpe_crx_de_ui.image_collection ={
+            "default": os.path.join(ICON_FOLDER, "unstructured.png"),
+            "nt:untructured": os.path.join(ICON_FOLDER, "unstructured.png"),
+            "rep:ACL": os.path.join(ICON_FOLDER, "unstructured.png"),
+            "cq:PageContent": os.path.join(ICON_FOLDER, "unstructured.png"),
+            "cq:PageContent": os.path.join(ICON_FOLDER, "unstructured.png"),
+            "cq:Page": os.path.join(ICON_FOLDER, "page.png"),
+            "nt:folder": os.path.join(ICON_FOLDER, "folder_closed.png"),
+            "nt:file": os.path.join(ICON_FOLDER, "file.png"),
+            "sling:OrderedFolder": os.path.join(ICON_FOLDER, "folder_closed.png"),
+            "sling:Folder": os.path.join(ICON_FOLDER, "folder_closed.png"),
+        }
+
+
+###CRX De
+###End Callbacks
+                    # self.dpe_crx_de_ui.edit_popup.var_edit_popentry = StringVar()
+                    # self.dpe_crx_de_ui.edit_popup.var_edit_popentry.set(str(selected_values[-1]))
+
+                    # self.dpe_crx_de_ui.edit_popup.frame1 = Frame(self.dpe_crx_de_ui.edit_popup)
+                    # self.dpe_crx_de_ui.edit_popup.frame1.pack(fill="both", expand="yes", padx=2, )
+                    # self.dpe_crx_de_ui.edit_popup.frame2 = Frame(self.dpe_crx_de_ui.edit_popup)
+                    # self.dpe_crx_de_ui.edit_popup.frame2.pack(fill="both", expand="yes", padx=2, )
+
+                    # self.dpe_crx_de_ui.edit_popup.ent = Entry(self.dpe_crx_de_ui.edit_popup.frame1, textvariable=self.dpe_crx_de_ui.edit_popup.var_edit_popentry)
+                    # self.dpe_crx_de_ui.edit_popup.ent.pack(side="left", fill="x", expand="yes", padx=2, ipadx=5, ipady=2, anchor="center")
+                    # self.dpe_crx_de_ui.edit_popup.ok_btn = ttk.Button(self.dpe_crx_de_ui.edit_popup.frame2, text="Ok", style="smallpopupBtn.TButton", command=save_prop)
+                    # self.dpe_crx_de_ui.edit_popup.ok_btn.pack(side="left", expand="yes" )
+                    # self.dpe_crx_de_ui.edit_popup.cancel_btn = ttk.Button(self.dpe_crx_de_ui.edit_popup.frame2, text="Cancel", style="smallpopupBtn.TButton", command=lambda *args: self.close_pop_window(self.dpe_crx_de_ui.edit_popup))
+                    # self.dpe_crx_de_ui.edit_popup.cancel_btn.pack(side="left", expand="yes" )
+                    
+                    
+###Predefined Report
+# if _is_user_def_report_selected:
+                    #     _is_var_present = bool(
+                    #         self.user_def_report_json["query list"][_selected_report]["variables"].strip())
+                    #     if self.predefined_report_ui.user_variable_entered_data is None and _is_var_present:
+                    #         messagebox.showerror(
+                    #             "Error Occurred!!", "Please Enter Variables value", parent=self.predefined_report_ui)
+                    #         logger.error("Please Enter Variables value")
+                    #     else:
+                    #         logger.debug("Generating Query!!")
+                    #         logger.debug("Variables Value Entered: %s" %
+                    #                      self.predefined_report_ui.user_variable_entered_data)
+                    #         _list_of_vars = [x.strip() for x in self.user_def_report_json["query list"]
+                    #                          [_selected_report]["variables"].split(",") if x.strip() != ""]
+                    #         _stored_query = self.user_def_report_json["query list"][_selected_report]["query"]
+                    #         _stored_query_type = self.user_def_report_json[
+                    #             "query list"][_selected_report]["type"]
+                    #         _generated_query = ""
+                    #         logger.debug("List of Vars: %s, Stored Query: %s, Stored Querytype: %s" % (
+                    #             _list_of_vars, _stored_query, _stored_query_type))
+                    #         _generated_query = _stored_query
+                    #         if self.predefined_report_ui.user_variable_entered_data is not None:
+                    #             for _each_stored_var in _list_of_vars:
+                    #                 _generated_query = _generated_query.replace(
+                    #                     "{"+_each_stored_var+"}", self.predefined_report_ui.user_variable_entered_data[_each_stored_var])
+
+                    #         logger.debug("Generated Query: %s" %
+                    #                      _generated_query)
+                    #         _splitted_gen_query = _generated_query.split("&") if _stored_query_type.lower(
+                    #             ) == "query builder" else _generated_query.split(" ")
+                    #         logger.debug("Splitted Query: " +str(_splitted_gen_query))
+                    #         _forbidden_path = [
+                    #             x.strip() for x in INVALID_PATH_STRING.split(",") if x.strip() != ""]
+                    #         _is_valid_stored_query, query_error_list = GenericFunctions.validate_query(
+                    #                     _splitted_gen_query, _stored_query_type, _forbidden_path)
+                    #         if _is_valid_stored_query:
+                    #             run_the_report = True
+                    #             if query_error_list.count("Content Root selected.") > 0:
+                    #                 run_the_report = messagebox.askyesnocancel("Please confirm to Run Query","Do you want to Run query on /content/pwc?", parent=self.predefined_report_ui.create_ui)
+                    #             if run_the_report:
+                    #                 report_ran_by_user = True
+                    #                 self.predefined_report_ui.fetched_data = self.predefined_report_instance.report_selector(report_name=_selected_report,
+                    #                                                                                                      query=_generated_query, query_type=_stored_query_type.lower(), props=_selected_property)
+                    #         else:
+                    #             messagebox.showerror(
+                    #                 "Invalid Query selected!!", "Below error occurred.\n"+"\n".join(query_error_list), parent=self.predefined_report_ui)
+
+                    # else:
+                    #     if _is_form_field_order_data_selected:
+                    #         self.predefined_report_ui.fetched_data = None
+                    #         out_data = None
+                    #         if _selected_report == "Processed Form Field Order data":
+                    #             out_data = self.predefined_report_instance.pwc_form_field_order_data("Online Arch", _territory_or_path, self.varyear.get(), self.varmonth.get(), self.vardate.get())
+                    #         elif _selected_report == "In-Progress Form Field Order data":
+                    #             out_data = self.predefined_report_instance.pwc_form_field_order_data("Online", _territory_or_path, self.varyear.get(), self.varmonth.get(), self.vardate.get())
+
+                    #         if out_data is not None:
+                    #             self.toggleInputField("disabled")
+                    #             _property_string = _property_string + ", PwCFormFieldOrder, PwCFormFieldOrderData"
+                    #             self.create_table_column(_property_string)
+                    #             _total_records = out_data["total"]
+                    #             self.total_label.config(
+                    #                 text="Total: "+str(_total_records), foreground="green")
+                    #             self.predefined_report_ui.fetched_data = []
+                    #             self.predefined_report_ui.fetched_data.append([out_data["results"], _total_records])
+                    #             for i, each in enumerate(out_data["hits"]):
+                    #                 self.results_label.config(
+                    #                     text="Current: "+str(i+1), foreground="green")
+                    #                 returned_val = self.predefined_report_instance.get_pwc_form_field_order_data(each["path"],_selected_property)
+                    #                 self.predefined_report_ui.fetched_data.append(list(returned_val))
+                    #                 self.data_table_holder.insert(
+                    #                     "", "end", iid=i+1, values=tuple(returned_val))
+                    #                 self.predefined_report_ui.update()
+                    #             self.export_btn["state"] = "normal"
+                    #     else:
+                    #         is_mandatory_avl = self.check_mandatory_field(
+                    #             _selected_report, self.varyear.get())
+                    #         if is_mandatory_avl:
+                    #             dam_asset_type = self.varyear.get().lower() if _selected_report.lower().find(
+                    #                 "dam assets report") > -1 else ""
+                    #             self.predefined_report_ui.fetched_data = self.predefined_report_instance.report_selector(report_name=_selected_report, environment= _selected_env,
+                    #                                                                                                  territory=_territory_or_path, props=_selected_property, year=self.varyear.get(), month=self.varmonth.get(),
+                    #                                                                                                  day=self.vardate.get(), type_of_dam=dam_asset_type)
+                    #             report_ran_by_user = True
+
+                    # if self.predefined_report_ui.fetched_data is not None and not(_is_form_field_order_data_selected):
+                    #     self.toggleInputField("disabled")
+                    #     if isinstance(self.predefined_report_ui.fetched_data, list):
+                    #         self.create_table_column(_property_string)
+                    #         for i, _each_row in enumerate(self.predefined_report_ui.fetched_data):
+                    #             if i == 0:
+                    #                 _total_records = _each_row[0] if (
+                    #                     _each_row[0] > 0 and _each_row[1] == 0) else _each_row[1]
+                    #                 self.results_label.config(
+                    #                     text="Result: "+str(_each_row[0]), foreground="green")
+                    #                 self.total_label.config(
+                    #                     text="Total: "+str(_total_records), foreground="green")
+                    #             else:
+                    #                 self.data_table_holder.insert(
+                    #                     "", "end", iid=i, values=tuple(_each_row))
+                    #         self.export_btn["state"] = "normal"
+                    #     else:
+                    #         self.results_label.config(
+                    #             text=self.predefined_report_ui.fetched_data, foreground="red")
+                    #         if self.predefined_report_ui.fetched_data == "Wrong Username and Password - Http Code - 401":
+                    #             self.username_ent["state"] = "normal"
+                    #             self.passwd_ent["state"] = "normal"
+                    #             self.fetch_data["state"] = "normal"
+                    #             self.export_btn["state"] = "disabled"
+
+                    # elif self.predefined_report_ui.fetched_data is None and report_ran_by_user:
+                    #     self.total_label.config(
+                    #                     text="No Data has been retrieve.", foreground="red")
+
+                    # self.predefined_report_ui.update()
+###End Predefined Report
+
+# Encryption Key
+# ENCRYPTION_KEY = b'OajUImTpdXWDXrBS_WYffcVzZtxJxds1lrc0cF2YscE='
+
+######
+
+
+# class GenericFunctions:
+#     @staticmethod
+#     def removetrailingspecialchar(val):
+#         try:
+#             val = str(val)
+#             if val.strip() != "":
+#                 while not (val[-1].isalnum()):
+#                     val = val[0: len(val) - 1]
+#                     if val == "":
+#                         break
+
+#             return val
+#         except:
+#             logger.error("Below Exception occurred\n", exc_info=True)
+
+#     @staticmethod
+#     def validateIP(ip, env):
+#         try:
+#             output = False
+#             cleanedip = ip[0: ip.rfind(":")] if ip.count(":") > 1 else ip
+#             # print(cleanedip)
+#             reenv = r"^(http|https)\:\/\/(\w+\-\w+|\w+)\.\w+\.\w+"
+#             reip = r"^http\:\/\/\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3}$"
+#             if env.lower() == "ip":
+#                 out = re.match(reip, cleanedip)
+#                 if out:
+#                     output = True
+#             else:
+#                 out = re.match(reenv, cleanedip)
+#                 if out:
+#                     output = True
+#             return output
+#         except:
+#             logger.error("Below Exception occurred\n", exc_info=True)
+
+#     @staticmethod
+#     def isUrlProcessed(url):
+#         try:
+#             dataprocessed = False
+#             url_split = url.split(":")
+
+#             if len(url_split) > 1:
+#                 pros = url_split[-1].strip().lower()
+                
+#                 if pros.find("processed") > -1 or pros.find("failed") > -1:  # Processed
+#                     dataprocessed = True
+#                 else:
+#                     dataprocessed = False
+#             else:
+#                 dataprocessed = False
+#             return dataprocessed
+#         except:
+#             logger.error("Below Exception occurred\n", exc_info=True)
+
+#     @staticmethod
+#     def encrypt_passwd(passwd):
+#         try:
+#             crispy = CRISP(ENCRYPTION_KEY)
+#             if not(isinstance(passwd, bytes)):
+#                 encoded_passwd = passwd.encode()
+#             else:
+#                 encoded_passwd = passwd
+#             encrypted_passwd = crispy.encrypt(encoded_passwd)
+
+#             return encrypted_passwd.decode()
+#         except:
+#             logger.error("Below Exception occurred\n", exc_info=True)
+
+#     @staticmethod
+#     def decrypt_passwd(encrypted_passwd):
+#         try:
+#             crispy = CRISP(ENCRYPTION_KEY)
+#             if not(isinstance(encrypted_passwd, bytes)):
+#                 encoded_passwd = encrypted_passwd.encode()
+#             else:
+#                 encoded_passwd = encrypted_passwd
+#             # encoded_passwd = encrypted_passwd.encode()
+#             decrypted_passwd = crispy.decrypt(encoded_passwd)
+
+#             return decrypted_passwd.decode()
+#         except:
+#             logger.error("Below Exception occurred\n", exc_info=True)
+#             return ""
+
+#     @staticmethod
+#     def is_belong_to_list(token, data_list):
+#         try:
+#             out = ""
+#             for each in data_list:
+#                 if each.startswith(token):
+#                     out = each
+#                     break
+#             return out
+
+#         except:
+#             logger.error("Below Exception occurred\n", exc_info=True)
+#             return ""
+
+#     @staticmethod
+#     def is_valid_file_types(file, types):
+#         try:
+#             out = False
+
+#             filename, fileext = os.path.splitext(file)
+#             if fileext in types:
+#                 out = True
+
+#             return out
+
+#         except:
+#             logger.error("Below Exception occurred\n", exc_info=True)
+#             return ""
+
+#     @staticmethod
+#     def wrap_text_with_dot(value, max_len):
+#         try:
+#             out = value
+#             value_len = len(value)
+#             if value_len > max_len:
+#                 startpos = (value_len-max_len) + 3
+#                 value = "..." + str(value[startpos:])
+#                 out = value
+#             return out
+
+#         except:
+#             logger.error("Below Exception occurred\n", exc_info=True)
+#             return value
+
+#     @staticmethod
+#     def is_signed_numeric(val):
+#         try:
+#             val = str(val)
+#             logger.debug("Value to be checked: "+val)
+#             output = False
+#             if val.strip() != "":
+#                 if val[0] == "-" or val[0] == "+":
+#                     re_val = val[1:]
+#                     logger.debug("Value has sign, without sign val: "+re_val)
+#                     if re_val.isnumeric():
+#                         output = True
+#                 else:
+#                     output = True if val.isnumeric() else False
+#                     logger.debug("Value has no sign, Output: "+str(output))
+
+#             return output
+#         except:
+#             logger.error("Below Exception occurred\n", exc_info=True)
+
+
+
+
+#### RetireveTree
+
+                    # payload_ = GenericFunctions.removetrailingspecialchar(payload_)
+                    # _splitted_payload = payload_.split("/")
+                    # # if not(self.payload_node_tree.exists("/")):
+                    # #     self.payload_node_tree.insert("","end",iid="/", values = ("/"), open=True)
+
+                    # for node_id in range(1, len(_splitted_payload) + 1):
+                    #     q = _splitted_payload[:node_id]
+                    #     fetch_url = "/".join(q)
+                    #     fetch_url = "/" if fetch_url.strip() == "" else fetch_url
+                    #     error_status = None
+                    #     if self.payload_node_tree.exists(fetch_url): 
+                    #         if not(self.has_children(self.payload_node_tree, fetch_url)):
+                    #             # self.payload_node_tree.insert("","end",iid=fetch_url, values = (fetch_url), open=True)
+                    #             _fetch = self.fetch_payload(fetch_url)
+                    #             self.dpe_crx_de_ui.update()
+
+                    #             if _fetch == True:
+                    #                 if bool(self.payload_node_tree.get_children(fetch_url)):
+                    #                     self.payload_node_tree.item(fetch_url, tags=["has_child"])
+                    #                 self.dpe_crx_de_ui.x_node += self.payload_node_tree.index(fetch_url)
+                    #             else:
+                    #                 error_status = _fetch
+                    #         else:
+                    #             self.dpe_crx_de_ui.x_node += self.payload_node_tree.index(fetch_url)
+                    #             print("After X Node: "+str(self.dpe_crx_de_ui.x_node))
+                                    
+                    #     else:
+                    #         selected_image = ImageTk.PhotoImage(file=self.dpe_crx_de_ui.image_collection["default"])
+                    #         self.dpe_crx_de_ui.image_reference.append(selected_image)
+                    #         self.payload_node_tree.insert("","end",iid=fetch_url, image=selected_image, text = fetch_url , open=True) #values = (fetch_url)
+                    #         _fetch = self.fetch_payload(fetch_url)
+                    #         self.dpe_crx_de_ui.update()
+
+                    #         if _fetch == True:
+                    #             if bool(self.payload_node_tree.get_children(fetch_url)):
+                    #                 self.payload_node_tree.item(fetch_url, tags=["has_child"])
+                    #             # self.dpe_crx_de_ui.x_node += self.payload_node_tree.index(fetch_url)
+                    #         else:
+                    #             error_status = _fetch
+                    #     self.payload_node_tree.yview_moveto(self.dpe_crx_de_ui.x_node/self.dpe_crx_de_ui.total_expanded_node)
+
+                    #     if error_status is not None:
+                    #         no_error = False
+                    #         if _fetch == 401:
+                    #             messagebox.showerror("Error!!", "Invalid Username and Password!!", parent=self.dpe_crx_de_ui)
+                    #             break
+                    #         elif _fetch == 901:
+                    #             messagebox.showerror("Error!!", "Invalid JSON Reponse!!", parent=self.dpe_crx_de_ui)
+                    #             break
+                    #         elif _fetch == 999:
+                    #             messagebox.showerror("Error!!", "Exception Occurred!!", parent=self.dpe_crx_de_ui)
+                    #             break
+                    #         else:
+                    #             messagebox.showerror("Error!!", "Error Retriving data!!"+str(_fetch), parent=self.dpe_crx_de_ui)
+                    #             break
+                    
+                    # if no_error:
+                    #     self.payload_node_tree.yview_moveto(self.dpe_crx_de_ui.x_node/self.dpe_crx_de_ui.total_expanded_node)
+                    #     payload_ = "/" if payload_.strip() == "" else payload_
+                    #     self.insert_into_property_tree(payload_)
+                    #     self.dpe_crx_de_ui.current_node = payload_
+                    #     self.toggle_input("normal")
+
+
+####### END OF Generic Finction ##########
+
+
+self.canvas.bind_all("<MouseWheel>", self._on_mousewheel)
+...
+def _on_mousewheel(self, event):
+    self.canvas.yview_scroll(-1*(event.delta/120), "units")
+
+
+
+def prepare_data(qb_link, p_path, props):
+                filter_data = "p.limit=" + str(self.wfoperationdata["limit result"]) + "&path="+ str(quote(p_path,safe='')) +\
+                                "&property=jcr:content/activatedInPublish&property.value=true&type=cq%3aPage&p.hits=selective"
+                        
+                query_data = filter_data + "&p.properties="+ props
+                self.logger.debug("Fullpath-> "+str(p_path)+", Filter Data -> "+str(filter_data)+", Columns-> "+str(props)
+                            +", Query Data-> "+str(query_data))
+                _final_query = self.ip + qb_link + "?" + query_data
+                self.logger.debug("Final Query: "+str(_final_query))
+                return _final_query
+            
+            def format_out_data(t_data):
+                out_data = []
+                results = [t_data.get("results",0),t_data.get("total",0)]
+                out_data.append(results)
+                for each in t_data["hits"]:
+                    chunks = []
+                    chunks.append(each.get("jcr:path", "Invalid Property"))
+                    for prop in cleaned_cols:
+                        if prop != "jcr:path":
+                            chunks.append(each["jcr:content"].get(prop.replace("jcr:content/",""), "Invalid Property"))
+                    out_data.append(chunks)
+                return out_data
+
+            content_root = self.wfoperationdata["content root"]
+            query_builder = self.wfoperationdata["query builder link"]
+            full_path = content_root + "/" + territory
+            enc_path = quote(full_path, safe='')
+
+            # Preparation of Column
+            cleaned_cols = ["jcr:content/"+(x.strip().replace("jcr:content/","")) for x in cols if x.strip() != ""]
+            cleaned_cols.insert(0,"jcr:path")
+            col_data = "+".join(cleaned_cols)
+
+            msg = None
+            outval = None
+
+            if len(territory) == 2:
+                query_for_locale = "p.limit=-1&path="+enc_path+"&path.flat=true&type=cq%3aPage"
+                q_locale_query = self.ip + query_builder + "?" + query_for_locale
+                self.logger.debug("Locale Query: %s" % q_locale_query)
+                
+                # print(final_query)
+                locale_res = requests.get(q_locale_query, auth = (self.user, self.passwd), timeout = self.timeout)
+
+                if locale_res.status_code == 200:
+                    for each_path in locale_res.json()["hits"]:
+                        locale = each_path["path"].split("/")[-1]
+                        if len(locale) == 2:
+                            # filter_data = "p.limit=" + str(self.wfoperationdata["limit result"]) + "&path="+ str(quote(each_path["path"],safe='')) +\
+                            #         "&property=jcr:content/activatedInPublish&property.value=true&type=cq%3aPage&p.hits=selective"
+                            
+                            # query_data = filter_data + "&p.properties="+ col_data
+                            # self.logger.debug("Fullpath-> "+str(each_path["path"])+", Filter Data -> "+str(filter_data)+", Columns-> "+str(col_data)
+                            #          +", Query Data-> "+str(query_data))
+                            # final_query = self.ip + query_builder + "?" + query_data
+                            # self.logger.debug("Final Query: "+str(final_query))
+                            final_query = prepare_data(query_builder, each_path["path"], col_data)
+                            resp_data = requests.get(final_query, auth=(self.user, self.passwd), timeout = self.timeout)
+                            if resp_data.status_code == 200:
+                                if outval is None:
+                                    outval = resp_data.json()
+                                else:
+                                    outval["results"] = outval["results"] + resp_data.json()["results"]
+                                    outval["total"] = outval["total"] + resp_data.json()["total"]
+                                    outval["hits"].extend(resp_data.json()["hits"])
+                            elif resp_data.status_code == 401:
+                                msg = "Wrong Username and Password - Http Code - "+str(resp_data.status_code)
+                                self.logger.error(msg)
+                                break
+                            else:
+                                msg = "Error Occurred - Http Code - "+str(resp_data.status_code)
+                                self.logger.error(msg)
+                                break
+                        else:
+                            self.logger.error("Locale is more than 2 chars: %s" % locale)
+                            continue
+                    if outval is not None:
+                        # msg = []
+                        # results = [outval.get("results",0),outval.get("total",0)]
+                        # msg.append(results)
+                        # for each in outval["hits"]:
+                        #     chunks = []
+                        #     chunks.append(each.get("jcr:path", "Invalid Property"))
+                        #     for prop in cleaned_cols:
+                        #         if prop != "jcr:path":
+                        #             chunks.append(each["jcr:content"].get(prop.replace("jcr:content/",""), "Invalid Property"))
+                        #     msg.append(chunks)
+                        msg = format_out_data(outval)
+                    
+                elif locale_res.status_code == 401:
+                    msg = "Wrong Username and Password - Http Code - "+str(locale_res.status_code)
+
+                else:
+                    msg = "Error Occurred - Http Code - "+str(locale_res.status_code)
+
+            return msg
+            
+
+
+            # query_data = "path:"+ each_path["path"] +" "+filter_data
+                        # query_data_enc = quote(query_data, safe='')
+                        # col_data_enc = quote(col_data, safe='')
+                        # time_in_ms = int(time()*1000)
+
+                        # self.logger.debug("Fullpath-> "+str(full_path)+", Filter Data -> "+str(filter_data)+", Columns-> "+str(col_data)
+                        #         +", Query Data-> "+str(query_data))
+                        # self.logger.debug("Encoded Query-> "+str(query_data_enc)+", Encoded ColumnData -> "+str(col_data_enc))
+
+                        # final_query = self.ip + bulk_editor + "?query=" + query_data_enc + "&tidy=true&cols="+col_data_enc+"&_dc="+str(time_in_ms)
+
+                        # self.logger.debug("Final Query: "+str(final_query))
+
+                        # resp_data = requests.get(final_query, auth=(self.user, self.passwd), timeout = self.timeout)
+                        
+                        # if resp_data.status_code == 200:
+                        #     if outval is None:
+                        #         outval = resp_data.json()
+                        #     else:
+                        #         outval["results"] = outval["results"] + resp_data.json()["results"]
+                        #         outval["hits"].extend(resp_data.json()["hits"])
+                        # elif resp_data.status_code == 401:
+                        #     msg = "Wrong Username and Password - Http Code - "+str(resp_data.status_code)
+                        #     self.logger.error(msg)
+                        #     break
+                        # else:
+                        #     msg = "Error Occurred - Http Code - "+str(resp_data.status_code)
+                        #     self.logger.error(msg)
+                        #     break
+
+#####QUERY BUILDER CODE
+self.define_style()
+
+            # String Variable
+            self.varuserent = StringVar()
+            self.varpassent = StringVar()
+            self.varlogdata = StringVar()
+            self.varenvdata = StringVar()
+            self.varipdata = StringVar()
+            self.varquerydata = StringVar()
+            self.varcountry = StringVar()
+            self.rfpvar = IntVar()
+            self.procvar = IntVar()
+            self.spamstatvar = IntVar()
+            self.emaildelvvar = IntVar()
+            self.obscenevar = IntVar()
+            self.archfailvvar = IntVar()
+            self.varmxlookup = StringVar()
+            # notspamvar = IntVar()
+            # potentialvar.set(1)
+            self.lowerbounddate = StringVar()
+            self.upperbounddate = StringVar()
+
+            # Initialize
+            self.querywindowinitializevar()
+
+            # Validation
+            self.varipdata.trace(
+                "w", lambda *args: self.checkipdata(self.varipdata))
+            self.varquerydata.trace(
+                "w", lambda *args: self.changecheckbox(
+                    self.varquerydata.get().lower())
+            )
+
+            # Label Frame
+            self.querywindowlabelframe()
+
+            # Style Design
+            self.stylequerybuilderwin.configure(
+                "buttondesign.TButton", font=(FONT_NAME, FONT_SIZE)
+            )
+            self.stylequerybuilderwin.configure(
+                "smallbuttondesign.TButton", font=(FONT_NAME, 8)
+            )
+            self.stylequerybuilderwin.configure(
+                "progressbar.Horizontal.TProgressbar",
+                background="green",
+                lightcolor="green",
+                darkcolor="green",
+            )
+
+            # Main Design
+            # Frame 1
+            self.frame_1 = Frame(self.dataframe)
+            self.frame_1.pack(fill="both", expand="yes")
+
+            # Query
+            self.querylabel = ttk.Label(
+                self.frame_1,
+                text="Select Type of Issues",
+                font=(FONT_NAME, FONT_SIZE),
+                anchor=CENTER,
+            )
+            self.querylabel.grid(
+                row=0, column=0, padx=5, pady=5, ipadx=5, ipady=5, sticky="nsew"
+            )
+            self.querydata = [
+                "",
+                "Form Processing",
+                "Potential Spam",
+                "Delivery Failure",
+                "MX Lookup",
+                "Archive Data Failed",
+                "Obscene Language",
+            ]
+            self.queryent = ttk.OptionMenu(
+                self.frame_1, self.varquerydata, *self.querydata
+            )
+            self.queryent.grid(
+                row=0, column=1, padx=5, pady=5, ipadx=5, ipady=5, sticky="nsew"
+            )
+            self.frame_1.grid_columnconfigure(1, weight=1)
+
+            # IP Frame
+            self.iplabelframe = LabelFrame(
+                self.frame_1,
+                text="Select Env or Enter IP(should start with http://)",
+                padx=5,
+                pady=5,
+            )
+            self.envdata = ["", "Stage", "Production", "QA", "IP"]
+            self.envent = ttk.OptionMenu(
+                self.iplabelframe, self.varenvdata, *self.envdata, command=self.ipchange
+            )
+            self.envent.grid(
+                row=0, column=0, padx=5, pady=5, ipadx=5, ipady=5, sticky="nsew"
+            )
+            self.iplabelframe.grid_columnconfigure(0, weight=1)
+            self.ipenter = ttk.Entry(
+                self.iplabelframe, textvariable=self.varipdata)
+            self.iplabelframe.grid(
+                row=0,
+                column=2,
+                columnspan=2,
+                padx=5,
+                pady=5,
+                ipadx=5,
+                ipady=5,
+                sticky="nsew",
+            )
+            self.frame_1.grid_columnconfigure(2, weight=1)
+
+            # UserName entry
+            self.userlabel = ttk.Label(
+                self.frame_1,
+                text="DPE Username*",
+                font=(FONT_NAME, FONT_SIZE),
+                anchor=CENTER,
+            )
+            self.userlabel.grid(
+                row=1, column=0, padx=5, pady=5, ipadx=5, ipady=5, sticky="nsew"
+            )
+            self.userent = ttk.Entry(
+                self.frame_1, textvariable=self.varuserent)
+            self.userent.grid(
+                row=1, column=1, padx=5, pady=5, ipadx=5, ipady=5, sticky="nsew"
+            )
+            self.frame_1.grid_columnconfigure(1, weight=1)
+
+            # Password Entry
+            self.passlabel = ttk.Label(
+                self.frame_1,
+                text="DPE password*",
+                font=(FONT_NAME, FONT_SIZE),
+                anchor=CENTER,
+            )
+            self.passlabel.grid(
+                row=1, column=2, padx=5, pady=5, ipadx=5, ipady=5, sticky="nsew"
+            )
+            self.passent = ttk.Entry(
+                self.frame_1, show="*", textvariable=self.varpassent
+            )
+            self.passent.grid(
+                row=1, column=3, padx=5, pady=5, ipadx=5, ipady=5, sticky="nsew"
+            )
+            self.frame_1.grid_columnconfigure(3, weight=1)
+
+            # Country
+            self.countrylabel = ttk.Label(
+                self.frame_1,
+                text="Enter Country Shortcode or\nLeave Blank to run globally",
+                font=(FONT_NAME, FONT_SIZE),
+                anchor=CENTER,
+            )
+            self.countrylabel.grid(
+                row=2, column=0, padx=5, pady=5, ipadx=5, ipady=5, sticky="nsew"
+            )
+            self.countryent = ttk.Entry(
+                self.frame_1, textvariable=self.varcountry)
+            self.countryent.grid(
+                row=2, column=1, padx=5, pady=5, ipadx=5, ipady=5, sticky="nsew"
+            )
+            self.frame_1.grid_columnconfigure(1, weight=1)
+
+            # Check Frame
+            self.checkframe = LabelFrame(
+                self.frame_1, text="Select the Status", padx=5, pady=5
+            )
+            self.checkframe.grid(
+                row=2, column=2, columnspan=4, padx=5, pady=5, sticky="nsew"
+            )
+
+            self.procchk = ttk.Checkbutton(
+                self.checkframe, text="Processed", variable=self.procvar
+            )
+            self.rfpchk = ttk.Checkbutton(
+                self.checkframe, text="Ready for processing", variable=self.rfpvar
+            )
+            self.markasspamradio = ttk.Radiobutton(
+                self.checkframe, text="Mark as Spam", variable=self.spamstatvar, value=1
+            )
+            self.notspamradio = ttk.Radiobutton(
+                self.checkframe, text="Not a Spam", variable=self.spamstatvar, value=2
+            )
+            self.sendemailradio = ttk.Radiobutton(
+                self.checkframe,
+                text="Send Email Again",
+                variable=self.emaildelvvar,
+                value=1,
+            )
+            self.delvfailedradio = ttk.Radiobutton(
+                self.checkframe,
+                text="Delivery Permanently Failed",
+                variable=self.emaildelvvar,
+                value=2,
+            )
+            self.mxlookuplabel = ttk.Label(
+                self.checkframe,
+                text="Select Operation",
+                font=(FONT_NAME, 10),
+                anchor=CENTER,
+            )
+            self.mxlookupdata = [
+                "",
+                "Allow Once",
+                "Incorrect Email Domain",
+                "Add to whitelist",
+            ]
+            self.mxlookupent = ttk.OptionMenu(
+                self.checkframe, self.varmxlookup, *self.mxlookupdata
+            )
+            self.arcvdatafailedradio = ttk.Radiobutton(
+                self.checkframe,
+                text="Retry Archive Data",
+                variable=self.archfailvvar,
+                value=1,
+            )
+            self.obsceneradio = ttk.Radiobutton(
+                self.checkframe, text="Banned Words", variable=self.obscenevar, value=1
+            )
+            self.notobsceneradio = ttk.Radiobutton(
+                self.checkframe, text="Not Obscene", variable=self.obscenevar, value=2
+            )
+
+            if self.varquerydata.get().strip() == "Form Processing":
+                self.procchk.grid(
+                    row=0, column=0, padx=5, pady=5, ipadx=5, ipady=5, sticky="nsew"
+                )
+                self.checkframe.grid_columnconfigure(0, weight=1)
+                self.rfpchk.grid(
+                    row=0, column=1, padx=5, pady=5, ipadx=5, ipady=5, sticky="nsew"
+                )
+                self.checkframe.grid_columnconfigure(1, weight=1)
+
+            # Lower Bound and Upper Bound
+            self.lowerboundbtn = ttk.Button(
+                self.frame_1,
+                text="Lower Bound (YYYY-MM-DD)",
+                style="smallbuttondesign.TButton",
+                command=self.selectLowerBound,
+            )
+            self.lowerboundbtn.grid(
+                row=3, column=0, padx=5, pady=5, ipadx=5, ipady=5, sticky="nsew"
+            )
+            # self.lowerboundlabel = ttk.Label(
+            #     self.frame_1,
+            #     textvariable=self.lowerbounddate,
+            #     font=(FONT_NAME, FONT_SIZE),
+            #     anchor=CENTER,
+            # )
+            self.lowerboundlabel = ttk.Entry(
+                self.frame_1,
+                textvariable=self.lowerbounddate
+            )
+            self.lowerboundlabel.grid(
+                row=3, column=1, padx=5, pady=5, ipadx=5, ipady=5, sticky="nsew"
+            )
+            self.frame_1.grid_columnconfigure(1, weight=1)
+            self.upperboundbtn = ttk.Button(
+                self.frame_1,
+                text="Upper Bound (YYYY-MM-DD)",
+                style="smallbuttondesign.TButton",
+                command=self.selectUpperBound,
+            )
+            self.upperboundbtn.grid(
+                row=3, column=2, padx=5, pady=5, ipadx=5, ipady=5, sticky="nsew"
+            )
+            # self.upperboundlabel = ttk.Label(
+            #     self.frame_1,
+            #     textvariable=self.upperbounddate,
+            #     font=(FONT_NAME, FONT_SIZE),
+            #     anchor=CENTER,
+            # )
+            self.upperboundlabel = ttk.Entry(
+                self.frame_1,
+                textvariable=self.upperbounddate
+            )
+            self.upperboundlabel.grid(
+                row=3, column=3, padx=5, pady=5, ipadx=5, ipady=5, sticky="nsew"
+            )
+            self.frame_1.grid_columnconfigure(3, weight=1)
+
+            # Frame 2
+            self.frame_2 = Frame(self.progressframe)
+            self.frame_2.pack(fill="both", expand="yes")
+
+            self.retrvdatabtn = ttk.Button(
+                self.frame_2,
+                text="Request Data",
+                style="buttondesign.TButton",
+                command=self.retrieveData,
+            )
+            self.retrvdatabtn.pack(side="left", expand="yes")
+            self.submitsinglebtn = ttk.Button(
+                self.frame_2,
+                text="Process the Selected",
+                style="buttondesign.TButton",
+                command=self.startclearselected,
+            )
+            self.submitallbtn = ttk.Button(
+                self.frame_2,
+                text="Process All",
+                style="buttondesign.TButton",
+                command=self.startclearall,
+            )
+            self.exitbtn = ttk.Button(
+                self.frame_2,
+                text="Exit Window",
+                style="buttondesign.TButton",
+                command=lambda root=self.master: self.reopenroot(root),
+            )
+            self.exitbtn.pack(side="right", expand="yes")
+            self.resetbtn = ttk.Button(
+                self.frame_2,
+                text="Reset All",
+                style="buttondesign.TButton",
+                command=self.resetwindow,
+            )
+            self.resetbtn.pack(side="right", expand="yes")
+
+            # Smal Button Frame
+            self.smallbtnframe = Frame(self.logframe)
+            self.smallbtnframe.pack(fill="both")
+
+            self.selectallbtn = ttk.Button(
+                self.smallbtnframe,
+                text="Select all",
+                style="smallbuttondesign.TButton",
+                command=lambda: self.data_tree.selection_set(
+                    self.data_tree.get_children()),
+            )
+            self.selectallbtn.pack(side="left", anchor="w", pady=0)
+            self.selectnonebtn = ttk.Button(
+                self.smallbtnframe,
+                text="Select None",
+                style="smallbuttondesign.TButton",
+                command=lambda: self.data_tree.selection_set(
+                    self.data_tree.get_children()),
+            )
+            self.selectnonebtn.pack(side="left", anchor="w", padx=10, pady=0)
+            # Error Label
+            self.error_label = Label(
+                self.smallbtnframe,
+                text="",
+                font=(FONT_NAME, FONT_SIZE-3),
+            )
+            self.error_label.pack(side="left", anchor="w", padx=10, pady=0)
+
+            # Frame 3
+            self.frame_3 = Frame(self.logframe)
+            self.frame_3.pack(fill="both", expand="yes")
+
+            # Tree Frame
+            self.data_tree_frame = Frame(self.frame_3)
+
+            self.data_tree = ttk.Treeview(
+                self.data_tree_frame, style="treeStyle.Treeview", show="headings", selectmode="extended", height=10)
+
+            self.data_tree_scroll_y = ttk.Scrollbar(
+                self.data_tree_frame, orient="vertical", command=self.data_tree.yview)
+            self.data_tree.config(yscrollcommand=self.data_tree_scroll_y.set)
+            self.data_tree_scroll_y.pack(side="right", fill="y")
+
+            self.data_tree_scroll_x = ttk.Scrollbar(
+                self.data_tree_frame, orient="horizontal", command=self.data_tree.xview)
+            self.data_tree.config(xscrollcommand=self.data_tree_scroll_x.set)
+            self.data_tree_scroll_x.pack(side="bottom", fill="x")
+
+            self.data_tree.pack(fill="both", expand="yes")
+            self.data_tree.bind("<<Copy>>", self.getDataandCopy)
+
+            self.data_tree_frame.pack(
+                fill="both", expand="yes", padx=5, pady=5)
+
+            self.querybuilderwin.update()
+            logger.debug("Full Table Widht: " +
+                         str(self.data_tree.winfo_width()))
+
+                         # self.parent_col_width +=  (5 * node_id) 
+            # if self.parent_col_width < self.actual_parent_col_width + (5*node_id) else self.parent_col_width
+            # logger.debug("Column Width: "+str(self.parent_col_width))
+            # self.payload_node_tree.column(
+            #     "#0", minwidth=20, width=self.parent_col_width, anchor='nw')
+            
+
+"""
+_charset_: UTF-8
+cmd: copyPage
+srcPath: /content/dam/pwc/rm/en/ankita/pwc_logo
+destParentPath: /content/dam/pwc/rm/en/ankita/videos
+
+#No children
+cmd: copyPage
+_charset_: utf-8
+before: 
+:status: browser
+destName: test-page-2
+srcPath: /content/pwc/rm/en/shouvik/test-page-1
+destParentPath: /content/pwc/rm/en/shouvik/shouvik-preview-move
+shallow: true
+
+
+##With children
+cmd: copyPage
+_charset_: utf-8
+before: 
+:status: browser
+destName: shouvik-preview-move-2
+srcPath: /content/pwc/rm/en/shouvik/shouvik-preview-move
+destParentPath: /content/pwc/rm/en/shouvik/l1landing
+shallow: false
+shallowCbx: on
+"""
+
+
+
+

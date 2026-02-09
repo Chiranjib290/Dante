@@ -1,0 +1,39 @@
+trigger: none
+
+pool:
+  vmImage: 'windows-latest'
+
+steps:
+- task: UsePythonVersion@0
+  inputs:
+    versionSpec: '3.10'
+    addToPath: true
+
+- script: |
+    python -m pip install --upgrade pip
+    python -m pip install setuptools
+    python -m pip install lief
+    python -m pip install cx_Freeze
+    python -m pip install cx_Freeze --upgrade
+    python -m pip install -r requirements.txt
+    python setup.py build
+  displayName: 'cmd line'
+
+- task: CopyFiles@2
+  inputs:
+    SourceFolder: '$(Build.SourcesDirectory)/build'
+    Contents: '**'
+    TargetFolder: '$(Build.ArtifactStagingDirectory)/build'
+
+- task: ArchiveFiles@2
+  inputs:
+    rootFolderOrFile: '$(Build.ArtifactStagingDirectory)/build'
+    includeRootFolder: false
+    archiveType: 'zip'
+    archiveFile: '$(Build.ArtifactStagingDirectory)/build.zip'
+    replaceExistingArchive: true
+
+- task: PublishBuildArtifacts@1
+  inputs:
+    PathtoPublish: '$(Build.ArtifactStagingDirectory)/build.zip'
+    ArtifactName: 'build zip inside'

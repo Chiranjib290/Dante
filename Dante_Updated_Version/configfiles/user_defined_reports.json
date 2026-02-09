@@ -1,0 +1,37 @@
+{
+    "current": 0,
+    "prefix": "User-Def",
+    "report_list": [
+     "Page Report",
+        "Published Page Report",
+        "Processed Contactus Form Report",
+        "In-Progress Contactus Form Report",
+        "Processed Online Form Report",
+        "In-Progress Online Form Report",
+        "Processed Form Field Order data",
+        "In-Progress Form Field Order data",
+        "DAM Assets Report",
+        "Published DAM Assets Report",
+        "Contact Page Report",
+        "Contact Page Report - Published",
+        "Redirection Details",
+        "Ghost Page Report",
+        "Contact Fragment Report",
+        "Contact Fragment Report - Published",
+        "Contact Fragment Reference",
+        "Tag Report",
+        "Tag Report - Published",
+        "Component Usage Report"   
+    ],
+    "query list": {
+    },
+    "form_list": [
+     "BottomKick Form",
+     "Online Forms",
+     "Event Form",
+     "All Form Types"
+    ]
+}
+
+
+    
