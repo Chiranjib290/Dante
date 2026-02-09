@@ -1,0 +1,179 @@
+Bulk User Deletion and Deactivation
+Bulk Workflow Manager - Done
+Stuck Workflow Dashboard
+User Friendly Logging Screen - Done
+Pre-Defined Report
+Bulk Deletion of Page and assets - Done
+
+Form data extraction for particular form / global form 
+	2. Deactivate page / Asset
+	3. Add cc / mailto field in bulk (array)
+	3. Query to find particular link in component property 
+	4. Initiate workflow (page / asset) for (pub-to-live / pub-to-preview)
+	4. Reading email field in contact pages
+	5. Delete node (page / asset / tag) -- Done
+    6. Component present in page
+
+create-version-file version_info.yml --outfile file_version_info.txt
+
+pyinstaller -F --hidden-import "babel.numbers" test.py
+
+pyinstaller -F --hidden-import "babel.numbers" --onefile -w --icon=favicon.ico --version-file file_version_info.txt --name Dante_Automation_tool dante_main_app.py
+
+pyinstaller -F --hidden-import "babel.numbers" --onefile -w --icon=favicon.ico --version-file file_version_info.txt --name Dante_Automation_tool dante_main_app_glbl.py
+https://dpe-stg.pwc.com/libs/cq/workflow/content/console/models.json?_dc=1611925262986
+
+https://dpe-stg.pwc.com/bin/querybuilder.json?p.hits=selective&p.properties=jcr:path+jcr:content/jcr:title&path=%2fcontent%2fpwc%2frm%2fen%2fshouvik&type=cq%3aPage&
+
+
+SELECT child.* FROM [nt:unstructured] AS parent INNER JOIN [nt:base] as child ON ISCHILDNODE(child,parent) 
+WHERE ISDESCENDANTNODE(parent, "/content/usergenerated/content/pwc/rm/en/shouvik") 
+AND child.[formtoprocess]="true" AND parent.[cq:lastReplicated] > CAST('2019-04-01T00:00:00.000Z' AS DATE)
+AND child.[status] = "Ready for processing"
+
+https://dpe-stg.pwc.com/crx/de/query.jsp?_dc=1614265470614&_charset_=utf-8&type=JCR-SQL2&
+stmt=SELECT%20child.*%0AFROM%20%5Bnt%3Aunstructured%5D%20AS%20parent%20%0AINNER%20JOIN%20%5Bnt%3Abase%5D%20
+as%20child%20ON%20ISCHILDNODE(child%2Cparent)%20%0AWHERE%20ISDESCENDANTNODE
+(parent%2C%20%22%2Fcontent%2Fusergenerated%2Fcontent%2Fpwc%2Frm%2Fen%2Fshouvik%22)%20AND%20
+child.%5Bformtoprocess%5D%3D%22true%22%20AND%20parent.%5Bcq%3AlastReplicated%5D%20%3E%20
+CAST(%272019-04-01T00%3A00%3A00.000Z%27%20AS%20DATE)&showResults=true
+
+
+SELECT child.* FROM [nt:unstructured] AS parent INNER JOIN [nt:unstructured] as child ON ISCHILDNODE(child,parent) WHERE ISDESCENDANTNODE(parent, "/content/usergenerated/content/pwc") AND child.[formtoprocess]="true" AND parent.[cq:lastReplicated] > CAST('2021-02-26T00:00:00.000Z' AS DATE) AND (child.[status] = "Ready for processing" OR child.[status] = "Processed")
+
+SELECT * FROM [cq:Page] AS s WHERE ISDESCENDANTNODE([/content/pwc/rm/en/shouvikv2]) and s.[jcr:content/root/container/isection-xf-bottom-kick/formName] = "annual-update-testing"
+
+https://dpe-stg.pwc.com/crx/server/crx.default/jcr%3aroot/content.1.json?_dc=1617970760137&node=xnode-264
+https://dpe-stg.pwc.com/crx/server/crx.default/jcr%3aroot/content/pwc.1.json?_dc=1617970760711&node=xnode-295
+https://dpe-stg.pwc.com/crx/server/crx.default/jcr%3aroot/content/pwc/rm.1.json?_dc=1617970761556&node=xnode-460
+https://dpe-stg.pwc.com/crx/server/crx.default/jcr%3aroot/content/pwc/rm/en.1.json?_dc=1617970762231&node=xnode-522
+https://dpe-stg.pwc.com/crx/server/crx.default/jcr%3aroot/content/pwc/rm/en/shouvik.1.json?_dc=1617970763360&node=xnode-817
+https://dpe-stg.pwc.com/crx/server/crx.default/jcr%3aroot/content/pwc/rm/en/shouvik/l2landing.1.json?_dc=1617971889607&node=xnode-887
+https://dpe-stg.pwc.com/crx/server/crx.default/jcr%3aroot/content/pwc/rm/en/shouvik/l2landing/jcr%3Acontent.1.json?_dc=1617971912588&node=xnode-964
+
+
+https://dpe-stg.pwc.com/crx/server/crx.default/jcr%3aroot/content/pwc/rm/en/shouvik/l3landing.1.json?_dc=1617971940625&node=xnode-886
+
+
+
+https://dpe-stg.pwc.com/crx/de/search.jsp?_dc=1617972293924&query=PWC82461131204&start=1&limit=10&_charset_=utf-8
+
+https://dpe-stg.pwc.com/crx/de/index.jsp#/etc/map/http/pwc-az-origin-extpub-stgv2.pwc.com/content/pwc/rm/en/shouvik/test5/test9/test14.html%24
+
+XPath - 
+/jcr:root/content/pwc/rm/en/shouvik//*[jcr:contains(., 'l2landing')] order by @jcr:score
+https://dpe-qa.pwc.com/crx/de/query.jsp?_dc=1621612877189&_charset_=utf-8&type=xpath&stmt=%2Fjcr%3Aroot%2Fcontent%2Fpwc%2Frm%2Fen%2Fshouvik%2F%2F*%5Bjcr%3Acontains(.%2C%20%27l2landing%27)%5D%20order%20by%20%40jcr%3Ascore&showResults=true
+
+
+SQL2:
+SELECT [jcr:path] FROM [nt:unstructured] AS comp WHERE ISDESCENDANTNODE(comp, "/content/pwc/rm/en/shouvik") AND comp.[jcr:path] LIKE "%/shouvik/l2landing%"
+https://dpe-qa.pwc.com/crx/de/query.jsp?_dc=1621613024465&_charset_=utf-8&type=JCR-SQL2&stmt=SELECT%20%5Bjcr%3Apath%5D%20FROM%20%5Bnt%3Aunstructured%5D%20AS%20comp%20WHERE%20ISDESCENDANTNODE(comp%2C%20%22%2Fcontent%2Fpwc%2Frm%2Fen%2Fshouvik%22)%20AND%20comp.%5Bjcr%3Apath%5D%20LIKE%20%22%25%2Fshouvik%2Fl2landing%25%22&showResults=true
+
+Search :
+
+https://dpe-qa.pwc.com/crx/de/search.jsp?_dc=1621615869346&query=PWC20895275399&start=1&limit=10&_charset_=utf-8
+
+Replication: POST
+URL - https://dpe-qa.pwc.com/crx/de/replication.jsp
+path: /content/pwc/rm/en/shouvik/l2landing/jcr:content
+action: replicate
+_charset_: utf-8
+### replicatedelete
+
+Replication GET
+https://dpe-qa.pwc.com/crx/de/replication.jsp?_dc=1621746507259&path=%2Fcontent%2Fpwc%2Frm%2Fen%2Fshouvik%2Fl2landing%2Fjcr%3Acontent&_charset_=utf-8
+
+Activate
+
+        curl -u admin:admin -X POST -F path="/content/path/to/page" -F cmd="activate" http://localhost:4502/bin/replicate.json
+
+Deactivate
+        curl -u admin:admin -X POST -F path="/content/path/to/page" -F cmd="deactivate" http://localhost:4502/bin/replicate.json
+
+Tree Activation
+        curl -u admin:admin -F cmd=activate -F ignoredeactivated=true -F onlymodified=true 
+        -F path=/content/geometrixx http://localhost:4502/etc/replication/treeactivation.html
+
+Content-Disposition: form-data; name=":diff"
+Content-Type: text/plain; charset=utf-8
+
++/content/pwc/global/referencedata/legal-entities/test_create_le : {"jcr:primaryType":"nt:unstructured"}
+
+rename: url = "https://dpe-stg.pwc.com/content/pwc/rm/en/shouvik/test-page-1"
+>>> target = "/content/pwc/rm/en/shouvik/test-page-x-2"
+>>> d = {':operation': 'move', ':dest': target}
+>>> d
+{':operation': 'move', ':dest': '/content/pwc/rm/en/shouvik/test-page-x-2'}
+
+
+pat = r"^(\/content\/pwc\/\w{2}\/\w{2}|\/content\/usergenerated(\/archive\/|\/)content\/pwc\/(\w{2}\/\w{2}|global\/forms\/contactUsForms\/\d{4}))(\/\w+)+"
+
+pat1 = r"^\/content(\/dam\/|\/)pwc\/\w{2}\/\w{2}"
+pat2 = r"^"\/content\/usergenerated(\/archive\/|\/)content\/pwc\/(\w{2}\/\w{2}|global\/forms\/contactUsForms\/\d{4})"
+
+
+https://dpe-qa.pwc.com/crx/server/crx.default/jcr%3aroot/content/pwc/script/rm/en/src/pricing.json/jcr%3Acontent/jcr:data?_dc=1622275746880
+
+Text: l2landing
+Path: /content/pwc/rm/en/shouvik
+Name: search
+FormEncoding: utf-8
+ck: 1622608401431
+Lang: xpath
+Query: /jcr:root/content/pwc/rm/en/shouvik//*
+[
+(@jcr:title = 'l2landing')
+]
+
+Ghost Page Report
+Form Page Report
+
+Redirect Finder
+
+find a resource type
+
+
+https://dpe-qa.pwc.com/crx/server/crx.default/jcr%3aroot
+
+/content/dam/pwc/rm/en/ankita/test_create_file.css/jcr:content/jcr:data
+
+https://dpe-stg.pwc.com/bin/wcm/heavymove?path=%2Fcontent%2Fpwc%2Fgx%2Fen%2Fservices%2Fdeals%2Ftrends&_charset_=utf-8&maxRefNo=450&_dc=1638861706609
+
+https://dpe-stg.pwc.com/mnt/overlay/wcm/core/content/sites/jcr:content/rails/references/items/references.provider.html?item=%2Fcontent%2Fpwc%2Fgx%2Fen%2Fservices%2Fdeals%2Ftrends&acceptType=incomingLinks&offset=300&_=1650371447009
+
+https://dpe-stg.pwc.com/mnt/overlay/wcm/core/content/sites/jcr:content/rails/references/items/references.provider.html?item=%2Fcontent%2Fpwc%2Fgx%2Fen%2Fservices%2Fdeals%2Ftrends&acceptType=incomingLinks&offset=100&_=1650371631527
+
+
+curl -k -u shouvik.d.das@in.pwc.com:serverdown -X POST https://dpe-stg.pwc.com/crx/packmgr/update.jsp -F path=/etc/packages/my_packages/stage_assets_nuevo.zip -F packageName=stage_assets_nuevo -F groupName=my_packages -F filter="[{'root':'/content/dam/pwc/rm/en/ankita/pwc_olympic_logo_chinese.png','rules':[]},{'root':'/content/dam/pwc/rm/en/ankita/pwc_olympic_logo_chinese_updated.png','rules':[]},{'root':'/content/dam/pwc/rm/en/ankita/pwc_olympic_logo_english.png','rules':[]}]" -F _charset_='UTF-8'
+
+
+https://drive.google.com/uc?export=download&confirm=9iBg&id=1DJq3D3LDadbtO6BJ26WtfYV3NxMlOaxt
+
+https://dpe.pwc.com/home/users/m/maria.x.panagiotou@uk.pwc.com.rw.html
+_charset_: utf-8
+disableUser: inactive
+
+
+offTime needs to be added in the Published page report
+
+
+
+rzGIg6lqLu4Ts0S8O4i16n/jfFGC8o5y
+F6q3vhBViq8rVoOoAp=OwZJ7Z/+8IdZE
+
+Select * from tab1 join tab2
+
+= > < >= =< NOT IN _
+
+CAST("true"  as Boolean)
+
+Content Fragment report
+Tag report
+Find component
+
+
+
+create-version-file configfiles\\version_info.yml --outfile file_version_info.txt
+
+
+pyinstaller -F --add-data=".\configfiles\*;.\configfiles" --add-data="images\*;.\images" --add-data=".\logo\*;.\logo" --add-data=".\version_info.yml;version_info.yml" --add-data=".\favicon.ico;.\favicon.ico" --hidden-import  "babel.numbers" --onefile -w --icon=favicon.ico --version-file file_version_info.txt --name Dante_Automation_tool dante_main_app_glbl.py

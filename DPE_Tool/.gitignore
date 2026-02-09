@@ -1,0 +1,21 @@
+#Ignore Log Files
+logs/
+
+#Ignore Test Files
+Files/
+test*.py
+extra_code.txt
+upcoming_features.txt
+*.bk
+all_territories_1.xlsx
+config - Copy.json
+picked_test.dat
+*test*
+test.py
+
+#Ignore VS Code settings
+.vscode/
+
+#Ignore Pycache
+__pycache__/
+upcoming_features.txt
